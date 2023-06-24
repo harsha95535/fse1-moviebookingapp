@@ -1,0 +1,21 @@
+<app-home></app-home>
+<div class="container-lg">
+  <div class="row movie-div my-div" *ngFor="let movie of movieList">
+    <div class="col-xxl-3">
+      <img src="{{getMovieImagePath(movie.movieName)}}" style="padding-left: 35% ;" alt="movie.movieName">
+    </div>
+    <div class="col-xxl-6">
+          <h1 class="movie-details">
+            <img src="../../../assets/images/movies/movie-icon.png" alt="movie icon">
+            {{movie.movieName}}</h1> <br>
+          <p class="movie-details" style="padding-left: 2px;">
+            <img src="../../../assets/images/movies/theatre-icon.png" alt="">
+            <b>{{movie.theatreName}}</b></p><br>
+          <p class="movie-details">
+            <img src="../../../assets/images/movies/tickets-icon.png" alt="">
+            {{movie.noOfTicketsAvailable}}</p><br>
+          <p class="movie-details" [ngClass]="movie.ticketsStatus === 'BOOK ASAP' ? 'movie-status-bookasap':'movie-status-soldout'">{{movie.ticketsStatus}}</p><br>
+          <button class="btn btn-primary" *ngIf="isLoggedAsUser()" [disabled]="movie.ticketsStatus === 'SOLD OUT'" (click)="booktickets(movie.movieName,movie.theatreName)">Book Now</button>
+    </div>
+  </div>
+</div>

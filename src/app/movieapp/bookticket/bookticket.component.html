@@ -1,0 +1,36 @@
+<app-home></app-home>
+<div class="container">
+    <div class="col-md-12 my-div">
+        <form (ngSubmit)="submitBookingForm()" #bookingForm="ngForm">
+            <h2 style="color: blue;">Book Tickets Here</h2>
+            <div class="form-group">
+                <label for="movieName">Movie Name:</label>
+                <input type="text" class="form-control" id="movieName" name="movieName" [(ngModel)]="booking.movieName"
+                    placeholder="Enter Movie Name" required>
+            </div>
+            <div class="form-group">
+                <label for="theaterName">Theater Name:</label>
+                <input type="text" class="form-control" id="theaterName" name="theaterName"
+                    placeholder="Enter Theartre Name" [(ngModel)]="booking.theatreName" required>
+            </div>
+            <div class="form-group">
+                <label for="numTickets">Number of Tickets:</label>
+                <input type="number" class="form-control" id="numTickets" name="numTickets"
+                    placeholder="Enter Number Of tickets to book" [(ngModel)]="noOfTickets" required>
+            </div>
+            <div class="form-group">
+                <label for="seatNumbers">Seat Numbers:</label>
+                <input type="text" class="form-control" name="seatNumbers" [(ngModel)]="seatNumbers" placeholder="Enter Seat numbers seperated by spaces" required>
+            </div>
+            <button type="submit" class="btn btn-primary" style="margin-top: 1%;"
+                [disabled]="!bookingForm.form.valid">Book Now</button>
+        </form>
+    </div>
+</div>
+
+
+<div class="container" *ngIf="message.length>0">
+    <div class="col-12 my-div">
+        <h2 style="color: green; text-align: center;">{{message}}</h2>
+    </div>
+</div>
