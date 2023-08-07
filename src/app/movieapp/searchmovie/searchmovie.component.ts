@@ -45,12 +45,9 @@ export class SearchmovieComponent implements OnInit {
 
   getMovieImagePath(movieName: string){
     switch(movieName){
-      case 'Dasara': return '../../../assets/images/movies/Dasara.jpg';
-      case 'Balagam': return '../../../assets/images/movies/Balagam.jpg';
-      case 'Bhoola': return '../../../assets/images/movies/Bhoola.jpg';
-      case 'Vidudhala': return '../../../assets/images/movies/Vidudhala.jpg';
-      case 'Pathaan': return '../../../assets/images/movies/Pathaan.jpg';
-      case 'Pushpa': return '../../../assets/images/movies/Pushpa.jpg';
+      case 'Mission Impossible:7': return '../../../assets/images/movies/MI7a.jpeg';
+      case 'Oppenheimer': return '../../../assets/images/movies/oppenheimer_1.jpeg';
+      case 'Bro': return '../../../assets/images/movies/BRO.png';
       default: return '';
     }
   }

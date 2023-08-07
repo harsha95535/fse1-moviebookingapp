@@ -20,19 +20,19 @@
     border-radius: 2px;
   }
   h1{
-    color: blue;
+    color: black;
   }
   .movie-details{
     display: inline-block;
   }
   .my-div{
-    background-color: #AFD3E2 !important;
+    background-color: #ededed !important;
   }
 .my-div{
     margin-top: 2%;
     padding : 2%;
     border : black 1px solid;
     border-radius: 10px;
-    background-color: #AFD3E2 !important;
+    background-color: #ededed !important;
     
 }

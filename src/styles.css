@@ -4,8 +4,5 @@
 } */
 body{
     /* background-color: #D4FAFC; */
-    background-image: url("../src/assets/images/movies/c3.webp");
-    background-repeat: no-repeat;
-    /* background-size: auto; */
     background-size: cover;
 }

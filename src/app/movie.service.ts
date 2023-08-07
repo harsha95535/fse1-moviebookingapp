@@ -13,19 +13,19 @@ import { Message } from './movieapp/models/Message';
 })
 export class MovieService {
   urlForGetAllMovies: string =
-    'http://movieloadbalancer-872791854.ap-south-1.elb.amazonaws.com:8080/api/v1.0/moviebooking/all';
+    'http://localhost:8080/api/v1.0/moviebooking/all';
   urlForGetMovieByName: string =
-    'http://movieloadbalancer-872791854.ap-south-1.elb.amazonaws.com:8080/api/v1.0/moviebooking/movies/search/';
+    'http://localhost:8080/api/v1.0/moviebooking/movies/search/';
   urlForRegisterAUser: string =
-    'http://movieloadbalancer-872791854.ap-south-1.elb.amazonaws.com:8080/api/v1.0/moviebooking/register';
-  urlForLogin: string = 'http://movieloadbalancer-872791854.ap-south-1.elb.amazonaws.com:8080/api/v1.0/moviebooking/login';
-  urlForBookingAMovie: string = 'http://movieloadbalancer-872791854.ap-south-1.elb.amazonaws.com:8080/api/v1.0/moviebooking/';
-  urlForPasswordReset: string = 'http://movieloadbalancer-872791854.ap-south-1.elb.amazonaws.com:8080/api/v1.0/moviebooking/';
+    'http://localhost:8080/api/v1.0/moviebooking/register';
+  urlForLogin: string = 'http://localhost:8080/api/v1.0/moviebooking/login';
+  urlForBookingAMovie: string = 'http://localhost:8080/api/v1.0/moviebooking/';
+  urlForPasswordReset: string = 'http://localhost:8080/api/v1.0/moviebooking/';
   urlForUpdatedAMovieStatus: string =
-    'http://movieloadbalancer-872791854.ap-south-1.elb.amazonaws.com:8080/api/v1.0/moviebooking/';
-  urlForDeletingAMovie: string = 'http://movieloadbalancer-872791854.ap-south-1.elb.amazonaws.com:8080/api/v1.0/moviebooking/';
+    'http://localhost:8080/api/v1.0/moviebooking/';
+  urlForDeletingAMovie: string = 'http://localhost:8080/api/v1.0/moviebooking/';
   urlForAllTicketsBooked: string =
-    'http://movieloadbalancer-872791854.ap-south-1.elb.amazonaws.com:8080/api/v1.0/moviebooking/getallbookedtickets/';
+    'http://localhost:8080/api/v1.0/moviebooking/getallbookedtickets/';
 
   userToken: string = '';
   adminToken: string = '';

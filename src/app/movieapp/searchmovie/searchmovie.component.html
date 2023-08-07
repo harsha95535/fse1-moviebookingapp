@@ -1,6 +1,6 @@
 <app-home></app-home>
 <div class="container my-div">
-    <h2 style="color: blue; text-align: center;">Search A Movie</h2> <br>
+    <h2 style="color: black; text-align: center;">Search A Movie</h2> <br>
     <div class="col-xxl-7">
         <form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
             <label for="movieName">Movie Name:</label>
@@ -14,7 +14,7 @@
       <div class="col-xxl-2">
           <img src="{{getMovieImagePath(movie.movieName)}}" alt="movie.movieName">
       </div>
-      <div class="col-xxl-3">
+      <div style="margin-left: 100px;" class="col-xxl-3">
         <h1 class="movie-details">
           <img src="../../../assets/images/movies/movie-icon.png" alt="movie icon">
           {{movie.movieName}}</h1> <br>
